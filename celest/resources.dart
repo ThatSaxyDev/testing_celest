@@ -2,25 +2,23 @@
 // it can be checked into version control.
 // ignore_for_file: type=lint, unused_local_variable, unnecessary_cast, unnecessary_import
 
-library; // ignore_for_file: no_leading_underscores_for_library_prefixes
+library;
 
-import 'package:celest/celest.dart' as _i1;
-import 'package:celest_backend/models.dart' as _i2;
+import 'package:celest/celest.dart';
 
 abstract final class apis {
-  static const auth = _i1.CloudApi(name: r'auth');
+  static const auth = CloudApi(name: r'auth');
 
-  static const greeting = _i1.CloudApi(name: r'greeting');
+  static const greeting = CloudApi(name: r'greeting');
 }
 
 abstract final class functions {
-  static const authLogin =
-      _i1.CloudFunction<({String email, String password}), _i2.Responsee>(
+  static const authLogin = CloudFunction(
     api: r'auth',
     functionName: r'login',
   );
 
-  static const greetingSayHello = _i1.CloudFunction<String, String>(
+  static const greetingSayHello = CloudFunction(
     api: r'greeting',
     functionName: r'sayHello',
   );

@@ -1,7 +1,6 @@
 import 'package:celest_backend/client.dart';
 import 'package:flutter/material.dart';
-import 'package:testing_celest/views/view_1.dart';
-import 'package:testing_celest/views/view_2.dart';
+import 'package:testing_celest/views/view_4.dart';
 
 void main() {
   celest.init();
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const View2(),
+      home: const View4(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:celest_backend/client.dart';
+import 'package:celest_backend/models.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testing_celest/views/view_1.dart';
@@ -29,6 +30,7 @@ class _View2State extends State<View2> {
   Widget build(BuildContext context) {
     final ht = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(),
       body: SizedBox(
         height: ht.height,
         width: ht.width,
